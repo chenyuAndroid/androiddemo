@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/admininfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#58a5ff"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/adminicon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_usericon"/>
+        <TextView
+            android:id="@+id/adminname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingLeft="10dp"
+            android:text="Chen Yu"
+            android:textSize="23sp"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admininfo"
+        android:padding="15dp"
+        android:divider="@null" />
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        android:layout_above="@+id/qiehuanzhuti"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/qiehuanzhuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="切换主题"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/listview"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/qiehuanzhuti"/>
+
+</RelativeLayout>

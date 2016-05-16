@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/actionicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_format"
+        android:layout_margin="5dp" />
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选项"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"/>
+
+</LinearLayout>

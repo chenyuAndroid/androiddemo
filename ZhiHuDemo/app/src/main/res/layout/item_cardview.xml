@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="15dp"
+    app:contentPaddingTop="2dp"
+    app:contentPaddingBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/usericon"
+                android:layout_height="35dp"
+                android:layout_width="35dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="4dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+                android:text="罗杰斯"
+                android:textSize="17sp"
+                android:textColor="#8cc3ff"
+                android:gravity="center"
+                android:layout_toRightOf="@id/usericon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="赞同了该答案"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/username"/>
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:text="1.0k"
+                android:textSize="17sp"
+                android:textColor="#408aff"
+                android:background="#a9d3ff"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Android开发测试Demo示例"
+            android:layout_below="@id/relativelayout"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:lines="3"
+            android:ellipsize="end"
+            android:text="测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容"
+            android:layout_below="@id/title"
+            android:padding="4dp"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
