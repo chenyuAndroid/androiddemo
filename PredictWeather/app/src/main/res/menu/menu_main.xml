@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+    android:id="@+id/action_search"
+    android:icon="@mipmap/ic_search"
+    app:actionViewClass="android.support.v7.widget.SearchView"
+    app:showAsAction="ifRoom|collapseActionView"
+    android:title="搜索" />
+    <!--<item android:id="@+id/action_search"-->
+        <!--android:title="Search"-->
+        <!--android:icon="@mipmap/ic_search"-->
+        <!--app:showAsAction="ifRoom"/>-->
+    <item android:id="@+id/action_refresh"
+        android:title="刷新"
+        android:icon="@mipmap/ic_refresh"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_improve"
+        android:title="对天气情况有疑问？"
+        android:icon="@mipmap/ic_refresh"
+        app:showAsAction="never"/>
+
+</menu>
